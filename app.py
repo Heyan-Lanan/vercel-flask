@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     name = request.args.get('name')
-    return f'Hello, {name}!' if name else 'Hello World!\n\nHint: add the name parameter to the URL: ?name=YourName'
+    return f'Hello, {name}!' if name else 'Hello World!<br><br>Hint: add the name parameter to the URL: ?name=YourName'
 
 
 if __name__ == '__main__':
